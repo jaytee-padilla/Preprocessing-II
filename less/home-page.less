@@ -1,5 +1,4 @@
 .home {
-
     header {
         img {
             margin-bottom: 20px;
@@ -7,8 +6,7 @@
     }
 
     .header-separator {
-        max-width: 800px;
-        .hr-style();
+      .hr-style();
     }
 
     .content-section {
@@ -31,6 +29,10 @@
             img {
                 border-radius: 10px;
             }
+        }
+
+        @media @mobile {
+          
         }
     }
 
@@ -70,12 +72,19 @@
             text-align: center;
 
             .btn {
-              
-              .button-style(@eastern-blue; @white; 1.8rem; 12px; 10px;);
-              text-align: center;
+
+                .button-style(@eastern-blue;
+                @white;
+                1.8rem;
+                12px;
+                10px;
+                );
+                text-align: center;
             }
         }
     }
-}
 
-// home
+    @media @mobile {
+      padding: 0 20px;
+    }
+}
